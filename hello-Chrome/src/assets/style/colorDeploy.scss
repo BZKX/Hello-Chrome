@@ -1,0 +1,59 @@
+@mixin themed($color){
+  color:$color;
+  /*判断匹配*/
+  [data-theme="Moss"] & {
+    color:$color-moss-light;
+    background-color: $color-moss-dark;
+  }
+  [data-theme="Granite"] & {
+    color:$color-moss-light;
+    background-color: $color-granite-dark;
+  }
+  [data-theme="Docks"] & {
+    color:$color-docks-light;
+    background-color: $color-docks-dark;
+  }
+}
+@mixin themed-main($color){
+  color:$color;
+  /*判断匹配*/
+  [data-theme="Moss"] & {
+    color:$color-moss-light;
+    background-color: $color-moss-main;
+  }
+  [data-theme="Granite"] & {
+    color:$color-granite-light;
+    background-color: $color-granite-main;
+  }
+  [data-theme="Docks"] & {
+    color:$color-docks-light;
+    background-color: $color-docks-main;
+  }
+}
+
+$color-moss-dark:#006270;
+$color-moss-main:#009394;
+$color-moss-light:#ffffff;
+
+$color-granite-dark:#3B7B9A;
+$color-granite-main:#A5DEF1;
+$color-granite-light:#073044;
+
+$color-docks-dark:#43506c;
+$color-docks-main:#3d619b;
+$color-docks-light:#e9e9eb;
+
+//普通---normal颜色
+$normal: #164146;
+$normal-pain: #90b2b5;
+$normal-hover: #43676b;
+
+//成功---success颜色
+$success:#41b883;
+$success-pain: #e2ffeb;
+$success-hover: #41c590;
+
+//$error:
+$error:#F56C6C;
+$error-pain:#fde2e2;
+$error-hover: #ff7070;
